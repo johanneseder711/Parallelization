@@ -33,5 +33,5 @@ if __name__ == "__main__":
 	url = [
 		"https://logos-world.net/wp-content/uploads/2021/10/Python-Symbol.png"
 	]
-	# pass an array that contains 10 times the url from above
-	download_pics(url*10)
+	# pass an array that contains 100 times the url from above
+	download_pics(url*100)
