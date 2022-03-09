@@ -26,10 +26,15 @@ We can already see a clear time gain in using the multi threaded version of our 
 In this part we want to have a look at parallelism in Python, e.g. using the multiple CPU's available on my Mac to achieve performance gains by executing multiple tasks literally at the same time.
 To make use of multiprocessing we need a [CPU-bound](https://en.wikipedia.org/wiki/CPU-bound) task. We will use the same function as proposed in the Mediun article above, which is a function appending random integers to a list. 
 
+### Results
 
 __simple_cpu_task.py__: 11,42s user 0,23s system 99% cpu 11,651 total 
 
 __multiprocessed_cpu_task.py__: 12,65s user 0,31s system 197% cpu 6,572 total
 
 We notice almost only half the time needed when performing the task with multiprocessing. The CPU usage also confirms the correct execution utilizing 2 CPU's when performing multiprocessing. 
+
+Interestingly the CPU user time in the multiprocessing example is higher than the total time needed for executing the task. This is because CPU user time is the accumulated time for all CPU's. Since we are using 2 CPU's the time for each is added, therefore resulting in a higher CPU user time than total time.
+For more on the meaning of user, sys and total check out this [Stackoverflow post](https://stackoverflow.com/questions/556405/what-do-real-user-and-sys-mean-in-the-output-of-time1)
+
 
