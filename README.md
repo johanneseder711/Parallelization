@@ -21,6 +21,7 @@ __multithreaded_io_task.py__: 1,00s user 0,14s system 46% cpu 2,485 total
 
 We can already see a clear time gain in using the multi threaded version of our notebook. Further investigation of the notebook will be done.
 
+You may also want to invetigate on why multi-threading in Pyhton may not always be a good idea (or faster than a normal implementation) as described in this [article](https://hackernoon.com/concurrent-programming-in-python-is-not-what-you-think-it-is-b6439c3f3e6a). Spoiler Alert: As explained in the Medium article, the reason is the usage of the __Python GIL__ (Global Interpreter Lock).
 ## Multiprocessing in Python
 
 In this part we want to have a look at parallelism in Python, e.g. using the multiple CPU's available on my Mac to achieve performance gains by executing multiple tasks literally at the same time.
