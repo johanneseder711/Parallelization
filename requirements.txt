@@ -1,0 +1,12 @@
+brotlipy @ file:///Users/runner/miniforge3/conda-bld/brotlipy_1636012319596/work
+certifi==2021.10.8
+cffi @ file:///Users/runner/miniforge3/conda-bld/cffi_1636046173594/work
+charset-normalizer @ file:///home/conda/feedstock_root/build_artifacts/charset-normalizer_1641584610847/work
+cryptography @ file:///Users/runner/miniforge3/conda-bld/cryptography_1639699578867/work
+idna @ file:///home/conda/feedstock_root/build_artifacts/idna_1642433548627/work
+pycparser @ file:///home/conda/feedstock_root/build_artifacts/pycparser_1636257122734/work
+pyOpenSSL @ file:///home/conda/feedstock_root/build_artifacts/pyopenssl_1633192417276/work
+PySocks @ file:///Users/runner/miniforge3/conda-bld/pysocks_1635862736740/work
+requests @ file:///home/conda/feedstock_root/build_artifacts/requests_1641580202195/work
+six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
+urllib3 @ file:///home/conda/feedstock_root/build_artifacts/urllib3_1641584929973/work
