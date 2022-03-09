@@ -20,3 +20,15 @@ __simple_io_task.py__: 1,95s user 0,28s system 18% cpu 12,333 total
 __multithreaded_io_task.py__: 1,00s user 0,14s system 46% cpu 2,485 total
 
 We can already see a clear time gain in using the multi threaded version of our notebook. Further investigation of the notebook will be done.
+
+## Multiprocessing in Python
+
+In this part we want to have a look at parallelism in Python, e.g. using the multiple CPU's available on my Mac to achieve performance gains by executing multiple tasks literally at the same time.
+To make use of multiprocessing we need a [CPU-bound](https://en.wikipedia.org/wiki/CPU-bound) task. We will use the same function as proposed in the Mediun article above, which is a function appending random integers to a list. 
+
+
+__simple_cpu_task.py__: 11,42s user 0,23s system 99% cpu 11,651 total
+__multiprocessed_cpu_task.py__: 12,65s user 0,31s system 197% cpu 6,572 total
+
+We notice almost only half the time needed when performing the task with multiprocessing. The CPU usage also confirms the correct execution utilizing 2 CPU's when performing multiprocessing. 
+
